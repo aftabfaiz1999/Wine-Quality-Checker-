@@ -29,10 +29,10 @@ def main():
     if st.button('Predict'):
         makepred=model.predict([[fixed_acidity,volatile_acidity,citric_acid,residual_sugar,chlorides,free_sulfur_dioxide,total_sulfur_dioxide,density,pH,sulphates,alcohol]])
         
-        if makepred[0]==5:
-            good='Quality is Best 5'
+        if makepred[0] == 0:
+            good='Bad Quality'
         else:
-            good='Quality is Just Good 6'
+            good='Good Quality'
         st.success(good)
         
         
