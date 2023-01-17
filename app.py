@@ -35,8 +35,9 @@ def main():
             good='Good Quality'
         st.success(good)
         
-            st.write('to check type for bad quality 10.7,	0.950,	0.95	,5.5	,0.0100	,10.5	,16.0,	0.99720	,3.15,	0.65,	9')
-            st.write('to check type for good quality 10.7,	0.950,	0.95	,5.5	,0.0100	,10.5	,16.0,	0.99720	,3.15,	0.65,	13')
+           st.header('About')
+    st.write("to check type for bad quality 10.7,	0.950,	0.95	,5.5	,0.0100	,10.5	,16.0,	0.99720	,3.15,	0.65,	9")
+    st.write("to check type for good quality 10.7,	0.950,	0.95	,5.5	,0.0100	,10.5	,16.0,	0.99720	,3.15,	0.65,	13")
         
     link = '[GitHub](https://github.com/aftabfaiz1999)'
     st.markdown(link, unsafe_allow_html=True)
