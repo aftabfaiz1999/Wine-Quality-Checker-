@@ -30,14 +30,14 @@ def main():
         makepred=model.predict([[fixed_acidity,volatile_acidity,citric_acid,residual_sugar,chlorides,free_sulfur_dioxide,total_sulfur_dioxide,density,pH,sulphates,alcohol]])
         
         if makepred[0] == 0:
-            good='Bad Quality'
+            good='Bad Quality Wine'
         else:
-            good='Good Quality'
+            good='Good Quality Wine'
         st.success(good)
         
     st.header('About')
-    st.write("to check type for bad quality 10.7,	0.950,	0.95	,5.5	,0.0100	,10.5	,16.0,	0.99720	,3.15,	0.65,	9")
-    st.write("to check type for good quality 10.7,	0.950,	0.95	,5.5	,0.0100	,10.5	,16.0,	0.99720	,3.15,	0.65,	13")
+    st.write("To check type for bad quality 10.7,	0.950,	0.95	,5.5	,0.0100	,10.5	,16.0,	0.99720	,3.15,	0.65,	9")
+    st.write("To check type for good quality 10.7,	0.950,	0.95	,5.5	,0.0100	,10.5	,16.0,	0.99720	,3.15,	0.65,	13")
         
     link = '[GitHub](https://github.com/aftabfaiz1999)'
     st.markdown(link, unsafe_allow_html=True)
