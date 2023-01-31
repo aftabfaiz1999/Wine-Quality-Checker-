@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<body><div class="result" style="text-align: center;"><br>
+	{% if prediction == 0 %}
+            <h1>The wine has bad Quality</h1>
+        {% else %}
+            <h1>The wine has good Quality</h1>
+        {% endif %}
+</div>
+</body>
+</html>
+
+<style>
+.result{
+    margin-top: 12em;
+    justify-content: center;
+    background-color: rgb(30, 172, 125);
+    margin-left: 8rem;
+    width: 18rem;
+    border-radius: 2rem;
+    height: 9rem;
+}
+body{
+
+    background: linear-gradient(to right, #00fff2 0%, #a41197 50%, #e04911 100%);
+}
+</style>
